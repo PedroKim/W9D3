@@ -1,0 +1,72 @@
+ul, li {
+ padding: 0;
+ margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+figure {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+ul {
+  width: 180px;
+  border-bottom: 15px solid black;
+  /* background-color: #bf951d; */
+  margin: 0 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+ul:hover {
+  border-color: blue;
+}
+
+ul.selected {
+  border-color: red;
+}
+
+li {
+  min-height: 50px;
+  margin: 10px auto;
+  border-radius: 25px;
+}
+
+li[class^="disk"] {
+  background-color: gray;
+}
+
+li.disk-1 {
+  width: 33.3333%;
+}
+
+li.disk-2 {
+  width: 66.6666%;
+  /* background-color: gray; */
+}
+
+li.disk-3 {
+  width: 100%;
+  /* background-color: gray; */
+}
+
+ul.game-over li[class^="disk"] {
+  background-color: #a76b00;
+}
+
+ul.game-over {
+  cursor: default;
+}
+ul.game-over:hover {
+  border-color: black;
+}
